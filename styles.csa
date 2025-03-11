@@ -1,0 +1,47 @@
+/* General Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #fff; color: #333; }
+a { text-decoration: none; color: inherit; }
+
+/* Navigation Bar */
+header { background: #000; padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.8rem; font-weight: bold; color: #fff; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 1.5rem; }
+.nav-links a { color: #fff; font-size: 1rem; transition: color 0.3s ease; }
+.nav-links a:hover { color: #1e90ff; }
+
+/* Sections */
+section { padding: 100px 2rem; min-height: 100vh; opacity: 0; transform: translateY(20px); transition: opacity 1s, transform 1s; }
+section.active { opacity: 1; transform: translateY(0); }
+
+/* Hero Section */
+#hero { background: linear-gradient(135deg, #000, #001f3f); color: #fff; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; }
+#hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+#hero p { font-size: 1.2rem; max-width: 600px; }
+
+/* About Section */
+#about { background: #f4f4f4; text-align: center; }
+#about p { max-width: 800px; margin: 0 auto; font-size: 1.1rem; }
+
+/* Services Section */
+#services { background: #fff; text-align: center; }
+.service-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; }
+.service-box { background: #f4f4f4; padding: 1.5rem; border-radius: 8px; flex: 1 1 300px; transition: transform 0.3s ease; }
+.service-box:hover { transform: scale(1.05); }
+
+/* Testimonials Section */
+#testimonials { background: #001f3f; color: #fff; text-align: center; }
+.testimonial { max-width: 600px; margin: 1rem auto; padding: 1rem; border-left: 4px solid #1e90ff; font-style: italic; }
+
+/* Contact Section */
+#contact { background: #f4f4f4; text-align: center; }
+#contact a { color: #1e90ff; font-weight: bold; }
+
+/* Footer */
+footer { background: #000; color: #fff; text-align: center; padding: 1rem 0; }
+
+/* Click Animation */
+.click-animate { transition: transform 0.2s ease; }
+.click-animate:active { transform: scale(0.95); }
